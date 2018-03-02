@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF5764E5-DCA2-4631-BF5E-E1333B2B09C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Customer</RootNamespace>
+    <AssemblyName>Customer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime.UIAttributes\EnDic_EditControlType.cs" />
+    <Compile Include="Runtime.UIAttributes\Endic_ShowControlType.cs" />
+    <Compile Include="Runtime.UIAttributes\UIEditControlType.cs" />
+    <Compile Include="Runtime.UIAttributes\UIIsEditInput.cs" />
+    <Compile Include="Runtime.UIAttributes\UIIsListShow.cs" />
+    <Compile Include="Runtime.UIAttributes\UIListControlType.cs" />
+    <Compile Include="Runtime.UIAttributes\UIName.cs" />
+    <Compile Include="Runtime.ValidAttributes\IValidRuler.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidDateTime.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidDecimal.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidDirectory.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidEmail.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidFile.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidLengthMax.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidLengthRang.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidNotNull.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidPhone.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidValueMax.cs" />
+    <Compile Include="Runtime.ValidAttributes\ValidValueRang.cs" />
+    <Compile Include="Utility.HttpUtility\HttpHelper.cs" />
+    <Compile Include="Utility.HttpUtility\WxConfig.cs" />
+    <Compile Include="Utility\ComboboxUtility.cs" />
+    <Compile Include="Utility\DateTimeUtility.cs" />
+    <Compile Include="Utility\DeepCopyUtility.cs" />
+    <Compile Include="Utility\IdentityUtility.cs" />
+    <Compile Include="Utility\JsonUtility.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
