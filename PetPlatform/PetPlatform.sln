@@ -19,7 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemService.IAccountServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualServer.PowerService", "APPWPF.PetRescue\bin\Plugins\VirtualServer.PowerService\VirtualServer.PowerService.csproj", "{B6654001-6742-4BE4-AE07-E84EB61F2529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repostory.Power", "APPWPF.PetRescue\bin\Plugins\Repostory.Power\Repostory.Power.csproj", "{631D70F8-064A-4C8D-9FEB-4E4777D01B60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "APPWPF.PetRescue\bin\Plugins\Domain\Domain.csproj", "{1E3357A6-9C76-4165-A400-FCD6689BB019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repostory", "APPWPF.PetRescue\bin\Plugins\Repostory\Repostory.csproj", "{AF5CD02D-ADCE-4945-938A-086C64EF8C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationService", "APPWPF.PetRescue\bin\Plugins\ApplicationService\ApplicationService.csproj", "{A7C821B0-1DB8-4908-81E2-CC96D26B4BC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +63,18 @@ Global
 		{B6654001-6742-4BE4-AE07-E84EB61F2529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6654001-6742-4BE4-AE07-E84EB61F2529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6654001-6742-4BE4-AE07-E84EB61F2529}.Release|Any CPU.Build.0 = Release|Any CPU
-		{631D70F8-064A-4C8D-9FEB-4E4777D01B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{631D70F8-064A-4C8D-9FEB-4E4777D01B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{631D70F8-064A-4C8D-9FEB-4E4777D01B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{631D70F8-064A-4C8D-9FEB-4E4777D01B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3357A6-9C76-4165-A400-FCD6689BB019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3357A6-9C76-4165-A400-FCD6689BB019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3357A6-9C76-4165-A400-FCD6689BB019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3357A6-9C76-4165-A400-FCD6689BB019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5CD02D-ADCE-4945-938A-086C64EF8C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5CD02D-ADCE-4945-938A-086C64EF8C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5CD02D-ADCE-4945-938A-086C64EF8C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5CD02D-ADCE-4945-938A-086C64EF8C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C821B0-1DB8-4908-81E2-CC96D26B4BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C821B0-1DB8-4908-81E2-CC96D26B4BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C821B0-1DB8-4908-81E2-CC96D26B4BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C821B0-1DB8-4908-81E2-CC96D26B4BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
