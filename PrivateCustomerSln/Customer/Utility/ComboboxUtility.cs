@@ -54,7 +54,7 @@ namespace Customer.Utility
         /// </summary>
         /// <typeparam name="T">枚举类型</typeparam>
         /// <returns>集合</returns>
-        public List<DTO_ComboboxItem> GetEnDicCombobox<T>() where T : struct
+        public static List<DTO_ComboboxItem> GetEnDicCombobox<T>() where T : struct
         {
             try
             {
@@ -78,7 +78,7 @@ namespace Customer.Utility
         /// <typeparam name="N">数据源枚举</typeparam>
         /// <param name="i">值</param>
         /// <returns>字典描述内容</returns>
-        public string GetContent<N>(int i) where N : struct
+        public static string GetContent<N>(int i) where N : struct
         {
             try
             {
@@ -95,7 +95,7 @@ namespace Customer.Utility
         /// <typeparam name="P">数据源枚举</typeparam>
         /// <param name="content">名称</param>
         /// <returns>值</returns>
-        public int GetValue<P>(string content) where P : struct
+        public static int GetValue<P>(string content) where P : struct
         {
             try
             {
