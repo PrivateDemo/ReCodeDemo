@@ -70,6 +70,7 @@
     <Compile Include="Utility\ComboboxUtility.cs" />
     <Compile Include="Utility\DateTimeUtility.cs" />
     <Compile Include="Utility\DeepCopyUtility.cs" />
+    <Compile Include="Utility\DTO_ComboboxItem.cs" />
     <Compile Include="Utility\IdentityUtility.cs" />
     <Compile Include="Utility\JsonUtility.cs" />
   </ItemGroup>
